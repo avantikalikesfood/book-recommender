@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Birds of Paradise';
+  src: url('fonts/BirdsofParadise.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #edf3f8; /* pastel blue-grey */
+  color: #333;
+}
+
+h1 {
+  font-family: 'Birds of Paradise', cursive;
+  font-size: 3rem;
+  color: #4d4d4d;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff8f3; /* soft pastel peach */
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-top: 1.5rem;
+  color: #5b5b5b;
+}
+
+select,
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #fefefe;
+  transition: 0.2s;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+  border-color: #a3d2ca;
+}
+
+button {
+  background-color: #a3d2ca;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #92c2bb;
+}
+
+.result {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+}

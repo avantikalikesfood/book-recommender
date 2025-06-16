@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Book Recommender</h1>
+
+    <label for="genre">Choose a Genre:</label>
+    <select id="genre">
+      <option value="">-- Select Genre --</option>
+      <option value="romance">Romance</option>
+      <option value="fantasy">Fantasy</option>
+      <option value="mystery">Mystery</option>
+      <option value="Historical">Historical</option>
+      <option value="Motivational">Motivational</option>
+      <option value="Biographies">Biographies</option>
+      <option value="Thrillers">Thrillers</option>
+      <option value="ScienceFiction">ScienceFiction</option>
+      <option value="YA Novel">YA Novel</option>
+      <option value="Comedy">Comedy</option>
+      <option value="RomCom">RomCom</option>
+      <!-- Add more as needed -->
+    </select>
+
+    <label for="tropes">Pick Tropes (Ctrl+Click or Cmd+Click to select multiple):</label>
+    <select id="tropes" multiple>
+      <option>Enemies to Lovers</option>
+      <option>Found Family</option>
+      <option>Second Chance</option>
+      <option>Fake Dating</option>
+      <option>Grumpy x Sunshine</option>
+      <!-- Add more tropes -->
+    </select>
+
+    <label for="lastRead">Last Book You Read (Optional):</label>
+    <input type="text" id="lastRead" placeholder="e.g., The Alchemist" />
+
+    <button onclick="getRecommendations()">Get Recommendations</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
